@@ -184,5 +184,3 @@ class Position{
         std::vector<Move> find_pseudo_legal_moves(char piece, int square);
 
 };
-
-#include "position.cpp"

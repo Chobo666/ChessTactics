@@ -64,5 +64,3 @@ class Move{
         
 };
 
-#include "move.cpp"
-

@@ -1,7 +1,7 @@
-#include "position.h"
 #include <map>
 #include <algorithm>
 #include <iostream>
+#include "position.h"
 #include "engine.h"
 
 #define Cache std::unordered_map<size_t, std::pair<int, int>>

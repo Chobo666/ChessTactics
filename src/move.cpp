@@ -1,4 +1,5 @@
 #include <string>
+#include "move.h"
 
 /**
  * @brief converts square index from inner representation of board to classic notation

@@ -10,7 +10,7 @@
 namespace Engine{
 
     // Piece values used in evaluation
-    std::unordered_map<char, int> piece_values = {
+    const std::unordered_map<char, int> piece_values = {
         {'K', 1000},
         {'Q', 9},
         {'R', 5},
@@ -26,16 +26,16 @@ namespace Engine{
     };
 
     // Evaluation value for mate in 0
-    int MATE = 1000000;
+    const int MATE = 1000000;
 
     // Minimal evaluation value which is considered as mate (should be more than sum of piece values)
-    int MATE_THRESHOLD = 2000;
+    const int MATE_THRESHOLD = 2000;
 
     // Smallest default depth used in calculations. Changing this value will have huge performance impact
-    int MIN_DEPTH = 2;
+    const int MIN_DEPTH = 2;
 
     // Highest default depth used in calculations. Changing this value will allow generation of harder puzzles, but thta will impact performance
-    int MAX_DEPTH = 5;
+    const int MAX_DEPTH = 5;
 
 
     /**
@@ -118,5 +118,3 @@ namespace Engine{
     bool is_solution(Position* puzzle, Move move, Cache* cache);
 
 }
-
-#include "engine.cpp"
